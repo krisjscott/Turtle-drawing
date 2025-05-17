@@ -1,14 +1,24 @@
 import turtle
+import random
 
-win = turtle.getscreen()
+def random_color_255():
+    """Generates a random RGB color with values between 0 and 255."""
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return (r, g, b)
+
+# Set up turtle
+win = turtle.Screen()
+win.colormode(255)  # Enable 0–255 RGB support
+
 impostor = turtle.Turtle()
 win.setup(width=600, height=600)
 
-body_color = 'yellow'
-glass_color = '#9acedc'
+# Use random RGB colors
+body_color = random_color_255()
+glass_color = '#9acedc' 
 
-
-# it can move forward backward left right
 def body():
     """ draws the body """
     impostor.pensize(20)
