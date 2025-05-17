@@ -1,74 +1,50 @@
-# 🐢 Among Us Crewmate with Python Turtle
+# 🛸 Among Us Impostor with Turtle
 
-This project uses the built-in `turtle` module in Python to draw a **yellow crewmate** from the popular game *Among Us*. It’s a fun and beginner-friendly graphics project designed to demonstrate how Python can be used creatively to make art using code.
-
----
-
-## 🚀 Features
-
-- Modular drawing with separate functions:
-  - `body()` – draws the body of the crewmate
-  - `glass()` – draws the blue visor
-  - `backpack()` – draws the oxygen tank
-- Easily customizable colors (`body_color` and `glass_color`)
-- Uses simple turtle commands like `forward()`, `circle()`, and `begin_fill()` to create complex shapes
+This Python project uses the **Turtle Graphics** library to draw a randomly-colored **Among Us** impostor character. The figure includes the **body**, **glass visor**, and **backpack**, making a full character representation on the screen. The body color is randomized using RGB values (0–255) each time the script is executed.
 
 ---
 
+## 👨‍💻 Author
+
+**Krish Kumar**  
+GitHub: [@krisjscott](https://github.com/krishjscott)
+
+---
+
+## 🐍 Requirements
+
+- Python 3.6 or higher
+- Standard libraries:
+  - `turtle`
+  - `random`
+
+---
+
+## ✨ Features
+
+- 🟢 Draws a complete **Among Us impostor** with:
+  - A randomly-colored body (RGB 0–255)
+  - A cyan-tinted glass visor
+  - A backpack attachment
+- 🧠 Uses Turtle’s `colormode(255)` to support full RGB color variation
+- 🐢 Customizable drawing speed (`impostor.speed(...)` available)
+
+---
+
+## 🚀 Setup & Usage
+
+1. Ensure Python 3.6+ is installed.
+2. Download or copy the script file `among_us_impostor.py`.
+3. Run the script:
+
+
+python among_us_impostor.py
 ## 🖥️ Preview
 
 Here's a sneak peek of the crewmate you'll create:
 
-*(Insert screenshot here once you run the code)*
+![image](https://github.com/user-attachments/assets/cd166de2-5dfb-40b8-b875-bc2485054d64)
+
 
 ---
-
-## 🛠️ Getting Started
-
-### Prerequisites
-Ensure you have Python installed. This project uses the standard library—no external packages are needed.
-
-### Running the Script
 ```bash
-python amongus_crewmate.py
-```
-
----
-
-## ✏️ Customization
-
-You can easily change the crewmate’s color:
-```python
-body_color = 'red'         # Change to any valid color
-glass_color = '#9acedc'    # Change visor color (hex or name)
-```
-
----
-
-## 📚 Concepts Used
-
-- Turtle graphics
-- Functions and modularity
-- Geometry with arcs and circles
-- Basic animation concepts using Python
-
----
-
-## 🤝 Contributing
-
-Feel free to fork this repo and submit pull requests! Ideas:
-- Add more characters
-- Animate the crewmate
-- Create a scene or background
-
----
-
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 👋 Acknowledgements
-
-Inspired by the game *Among Us* and a love for blending art with code.
